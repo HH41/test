@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist</title>        
+    <link rel="stylesheet" type="text/css" href="list.css"/>
+</head>
+<body>
+    <div class="hander" id="hand">
+        <div class="title">
+            <form action="javascript:postaction()" id="form">
+                <label for="title">TodoList</label>
+                <input type="text" placeholder="请输入待办事项" id="add" class="text_button">
+                <input type="submit" value="提交" onclick="Add();" class="edit_button">  
+            </form>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="content">
+            <h2>
+                
+                <span id="todocount"></span>
+            </h2>
+            <div class="list-box">
+                <ol class="todolist" id="todolist">
+                   
+                </ol>
+            </div>
+            
+            <h2>
+               
+                <span id="donecount"></span>
+            </h2>
+            <div class="list-box">
+                <ol class="donelist" id="donelist">
+  
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="list.js"></script>
+
+</body>
